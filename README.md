@@ -7,14 +7,11 @@ For Ex:
 2. A limit, which will determine the number of tracks to output
 
 For example, giving the parameters:
-chart 3
-Should output the top 3 most tagged tracks irrespective of user location. The output should
-be in a columnar format and contain the following fields:
-CHART POSITION , TRACK TITLE , ARTIST NAME
-Thus, the output may be as follows:
-1 Shape Of You Ed Sheeran
-2 24k Magic Bruno Mars
-3 This Girl Kungs
+chart 5
+Should output the top 5 most tagged tracks irrespective of user location. The output should
+look something like this :
+![GLOBAL CHARTS](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/chart_global.png)
+
 Similarly, giving the parameters:
 state_chart 3
 Should output the top 3 tracks in each and every US state.
