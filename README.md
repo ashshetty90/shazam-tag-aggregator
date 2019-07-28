@@ -13,5 +13,6 @@ look something like this :
 ![GLOBAL CHARTS](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/chart_global.png)
 
 Similarly, giving the parameters:
-state_chart 3
-Should output the top 3 tracks in each and every US state.
+state_chart 1
+Should output the top track in each and every US state similar to :
+![STATE CHARTS](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/chart_state.png)
