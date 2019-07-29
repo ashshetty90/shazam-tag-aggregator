@@ -59,7 +59,25 @@ $ python3 --version
 
 ### Moving on to installing spark in the local machine 
 
-Firstly, you would need java8 installed on your machine, I have installed openjdk8 using:
+You would need java8 installed on your machine, I have installed openjdk8 using:
 
 $ brew cask install homebrew/cask-versions/adoptopenjdk8
+
+Install apache-spark
+$ brew install apache-spark
+
+### In case you have more than one version of python installed in your machine, make sure you enforce python3 as the default python version for your py-spark applications by adding :
+
+export PYSPARK_PYTHON=/usr/local/bin/python3  in the .bash_profile or /usr/local/Cellar/apache-spark/2.4.3/libexec/conf/spark-env.sh.template (Or spark-env.sh whichever is available)
+
+### Install dependecies from Pipfile
+$ pipenv install
+
+### Run the tests
+$ python3 -m unittest tests/test_shazam_data.py
+
+### Running the application
+$ /usr/local/Cellar/apache-spark/2.4.3/bin/spark-submit --py-files <complete path to the driver.py file>/driver.py <complete path to the driver.py file>/driver.py <chart type 'chart' or 'state_chart'> <no of records ot be displayed> <complete path to the raw json file>/shazamtagdata.json
+For Ex:
+$ /usr/local/Cellar/apache-spark/2.4.3/bin/spark-submit --py-files /User/Workspace/app/driver.py /User/Workspace/app/driver.py chart 10 /User/Workspace/app/raw_json/shazamtagdata.json
 
