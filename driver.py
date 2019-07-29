@@ -10,9 +10,16 @@ import sys
 VALID_CHART_TYPES = ('chart', 'state_chart')
 
 
-def validate_chart_params(chart_type, chart_length):
+def input_validator(chart_type, chart_length):
+    """
+    :param chart_type: the type of chart to be displayed possible values are `chart` and `state_chart`
+    :param chart_length: the number of records that need to be displayed
+    :return: void if all the conditions are met, exception in case if its not
+    """
     try:
-        int(chart_length)
+        chart_size = int(chart_length)
+        if chart_size == 0:
+            raise ValueError('Chart length should be greater than 0')
     except ValueError:
         raise ValueError('Please enter a valid integer value for chart length')
 
@@ -176,7 +183,7 @@ def start():
         Validating the command line arguments passed
         
         """
-        validate_chart_params(chart_type, chart_length)
+        input_validator(chart_type, chart_length)
     except ValueError as e:
         print(e)
         sys.exit(1)

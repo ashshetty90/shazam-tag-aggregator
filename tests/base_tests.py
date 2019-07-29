@@ -29,8 +29,8 @@ class BaseTestClass(unittest.TestCase):
 
 
     def test_validate_chart_params(self):
-        self.assertRaises(ValueError,driver.validate_chart_params,'chart','a')
-        self.assertRaises(ValueError, driver.validate_chart_params, 'invalid_value', '3')
+        self.assertRaises(ValueError, driver.input_validator, 'chart', 'a')
+        self.assertRaises(ValueError, driver.input_validator, 'invalid_value', '3')
 
 
     def tearDown(self):
