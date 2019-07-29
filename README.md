@@ -5,18 +5,16 @@ This project is a Spark based application written in python to clean raw data in
 
 # Requirement:
 
-For Ex: 
-1. A command, which will be either "chart" or "state_chart"
-2. A limit, which will determine the number of tracks to output
+A command line application that would be taking to three parameters as input displays the result:
 
 For example, giving the parameters:
-chart 5
+chart 5 raw.json
 Should output the top 5 most tagged tracks irrespective of user location. The output should
 look something like this :
 ![GLOBAL CHARTS](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/chart_global.png)
 
 Similarly, giving the parameters:
-state_chart 1
+state_chart 1 raw.json
 Should output the top track in each and every US state similar to :
 ![STATE CHARTS](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/chart_state.png)
 
