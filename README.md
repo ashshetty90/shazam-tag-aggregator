@@ -89,12 +89,14 @@ http://192.168.1.3:4040/jobs/
 
 # Screenshots
 ### Initial Steps
+INSTALL OPEN JDK
+![BREW_INSTALL_OPENJDK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/opne-jdk-install.png "INSTALL OPENJDK")
 
-![BREW_INSTALL_OPENJDK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/opne-jdk-install.png)
+BREW INSTALL APACHE SPARK
+![BREW_INSTALL_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/install-apache-spark.png "BREW INSTALL APACHE SPARK")
 
-![BREW_INSTALL_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/install-apache-spark.png)
-
-![VALIDATE_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/spark-installed.png)
+VALIDATE APACHESPARK
+![VALIDATE_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/spark-installed.png "VALIDATE APACHE SPARK")
 
 
 
