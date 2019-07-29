@@ -89,14 +89,22 @@ http://192.168.1.3:4040/jobs/
 
 # Screenshots
 ### Initial Steps
-INSTALL OPEN JDK
+Install open jdk8
 ![BREW_INSTALL_OPENJDK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/opne-jdk-install.png "INSTALL OPENJDK")
 
-BREW INSTALL APACHE SPARK
+brew install apache spark
 ![BREW_INSTALL_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/install-apache-spark.png "BREW INSTALL APACHE SPARK")
 
-VALIDATE APACHESPARK
+validate apache spark
 ![VALIDATE_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/spark-installed.png "VALIDATE APACHE SPARK")
+
+python unit test cases
+![PYTHON_UNITTESTCASES](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/unit-test-cases.png "PYTHON_UNITTESTCASES")
+
+application ui
+![SPARK LOCAL UI](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/spark_local_ui.png "SPARK LOCAL UI")
+
+
 
 
 
