@@ -28,6 +28,9 @@ def input_validator(chart_type, chart_length):
 
 
 def get_tag_event_schema():
+    """
+    :return: the schema for the raw json data
+    """
     return StructType(
         [
             StructField('client', StringType(), True),
