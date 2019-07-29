@@ -81,3 +81,20 @@ $ /usr/local/Cellar/apache-spark/2.4.3/bin/spark-submit --py-files <complete pat
 For Ex:
 $ /usr/local/Cellar/apache-spark/2.4.3/bin/spark-submit --py-files /User/Workspace/app/driver.py /User/Workspace/app/driver.py chart 10 /User/Workspace/app/raw_json/shazamtagdata.json
 
+```
+# Troubleshooting
+Considering that you would be running this application locally,the logs for the same can be found at :
+http://192.168.1.3:4040/jobs/
+(Make sure port 4040 is not used by any other application)
+
+# Screenshots
+### Initial Steps
+
+![BREW_INSTALL_OPENJDK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/opne-jdk-install.png)
+
+![BREW_INSTALL_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/install-apache-spark.png)
+
+![VALIDATE_APACHESPARK](https://github.com/ashshetty90/shazam-tag-aggregator/blob/master/images/spark-installed.png)
+
+
+
