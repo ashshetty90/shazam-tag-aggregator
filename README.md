@@ -21,8 +21,9 @@ Should output the top track in each and every US state similar to :
 # Assumptions:
 
 1) After closing analyzing the data its seen that there are different client types, hence the assumption here is client type other than *SHAZAM* also need to be considered in the calculation
-2) For scenario-2, the geolocation information is used to determine the state level information of each user activity. Hoever there are a lot of null geolcation data (14909 records to be precise), this will however were not considered as the they did not have any state level information in them
-3) This project is an MVP and no memory tweaks were done on the spark side to scale this application up as all default spark configurations were used.
+2) For scenario-2, the geolocation information is used to determine the state level information of each user activity. Hoever there are a lot of null geolcation data (14909 records to be precise), this will however were not considered as the they did not have any state level information in them.
+3) For scenario-2 it would be not be always possible to display all the records on the UI as this could lead the application to slow down. Hence an upper limit of 500 records is kept.
+4) This project is an MVP and no memory tweaks were done on the spark side to scale this application up as all default spark configurations were used.
 
 # Architecture:
 The Architecture involves the following tech stack.
