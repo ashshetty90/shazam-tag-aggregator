@@ -1,4 +1,4 @@
-# shazam-tag-aggregator
+# Shazam Tag Aggregator
 
 # Overview:
 This project is a Spark based application written in python to clean raw data in json which is a 3 hour snapshot of the user activity registered in the US. The output of the spark job is determined based on a the set of command line parameters passed by the user at the time of running the spark application. 
